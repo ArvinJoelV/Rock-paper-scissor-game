@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="./804-8049853_med-boukrima-specialist-webmaster-php-e-commerce-web.png">
+        <title>Rock Paper Scissor</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="main">
+            <h4 class="h31">The Game Of</h4>
+            <h1 class="h11">Rock Paper Scissor</h1>
+            <button class="btn-1" onclick="result('rock')" ><img src="./rock-emoji.png" alt="rock"></button>
+            <button class="btn-2" onclick="result('paper')"><img src="./paper-emoji.png" alt="paper"></button>
+            <button class="btn-3" onclick="result('scissor')"><img src="./scissor-emoji.png" alt="scissor"></button>
+            <h1 class="result1"></h1>
+            <div class="hi">
+                <p class="summary"></p>
+                <p class="img-sum"></p>
+            </div>
+            <div class="hi2">
+                <p class="summary1"></p>
+                <p class="img-sum1"></p>
+            </div>
+            
+            
+            <p class="score2"></p>
+            <button class="btn-4" onclick="
+              score.win=0;
+              score.loss=0;
+              score.tie=0;
+              localStorage.removeItem('score');
+              document.querySelector('.score2').innerHTML=`Wins:${score.win} , Loss:${score.loss} , Tie:${score.tie}`;">Reset score</button>
+              <button class="btn-4 btn-5">Auto Play</button>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
